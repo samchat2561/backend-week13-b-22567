@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="navbar-center">
-        <a class="btn btn-ghost text-xl">
+        <a href="{{ route('home') }}" wire:navigate class="btn btn-ghost text-xl">
             {{ config('app.name') }}
         </a>
     </div>
