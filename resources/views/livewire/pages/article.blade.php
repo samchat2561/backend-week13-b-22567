@@ -5,7 +5,7 @@
                 <h1>{{ $article?->title }}</h1>
 
                 {{-- {{ $article?->image->path }} --}}
-                <img class="rounded-sm" src="{{ $article->image->path }}" alt="{{ $article->image->alt_text }}">
+                <img class="rounded-sm" src="/storage/{{ $article->image->path }}" alt="{{ $article->image->alt_text }}">
 
                 {!! $article?->content !!}
 
