@@ -4,7 +4,8 @@
             <article class="mx-auto prose p-6">
                 <h1>{{ $article?->title }}</h1>
 
-                {{ $article?->image->path }}
+                {{-- {{ $article?->image->path }} --}}
+                <img class="rounded-sm" src="{{ $article->image->path }}" alt="{{ $article->image->alt_text }}">
 
                 {!! $article?->content !!}
 
