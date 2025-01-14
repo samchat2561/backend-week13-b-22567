@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Awcodes\Curator\Models\Media;
 use WireComments\Traits\Commentable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Article extends Model
 {
@@ -14,4 +16,9 @@ class Article extends Model
         "content",
         "media_id",
     ];
+
+    public function image(): BelongsTo
+    {
+        return $this->belongsTo(Media::class, 'media_id');
+    }
 }

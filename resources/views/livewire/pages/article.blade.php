@@ -3,7 +3,11 @@
         <div class="overflow-hidden bg-white dark:bg-gray-800 shadow rounded">
             <article class="mx-auto prose p-6">
                 <h1>{{ $article?->title }}</h1>
+
+                {{ $article?->image->path }}
+
                 {!! $article?->content !!}
+
             </article>
         </div>
     </div>
