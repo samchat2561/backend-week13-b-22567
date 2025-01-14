@@ -9,7 +9,7 @@ use Livewire\Attributes\Layout;
 
 class Article extends Component
 {
-    public ArticleModel $artitle;
+    public ArticleModel $article;
     #[Layout("layouts.app")]
     public function render():View
     {

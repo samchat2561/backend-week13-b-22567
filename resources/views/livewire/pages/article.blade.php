@@ -2,7 +2,8 @@
     <div class="max-w-5xl mx-auto sm:px-6 lg:px-8">
         <div class="overflow-hidden">
             <article class="mx-auto prose p-6">
-                <h1>Hello world</h1>
+                <h1>{{ $article?->title }}</h1>
+                {!! $article?->content !!}
             </article>
         </div>
     </div>
